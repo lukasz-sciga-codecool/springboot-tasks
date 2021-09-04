@@ -11,18 +11,9 @@ import java.util.List;
 @RestController
 public class RequestCounterController {
 
-    private final List<String> shoppingCart;
-
-    private final RequestCountStatsService service;
-
-    @Autowired
-    public RequestCounterController(RequestCountStatsService service) throws InterruptedException {
-        this.shoppingCart = new ArrayList<>();
-        this.service = service;
-    }
-
     @GetMapping("/api/requests")
-    public ResponseEntity<Void> get() throws InterruptedException {
+    public ResponseEntity<Void> get() {
+        System.out.println("Inside get");
         return ResponseEntity.ok().build();
     }
 
