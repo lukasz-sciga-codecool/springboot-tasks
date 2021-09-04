@@ -14,6 +14,8 @@ import java.util.List;
 @RestController
 public class ProductController {
 
+    private static final Logger LOG = LoggerFactory.getLogger(ProductController.class);
+
     private final ProductService productService;
 
     public ProductController(ProductService productService) {
@@ -22,6 +24,12 @@ public class ProductController {
 
     @GetMapping("/products")
     public List<Product> getProducts(){
+        System.out.println("Hello from println");
+        LOG.trace("A TRACE Message");
+        LOG.debug("A DEBUG Message");
+        LOG.info("An INFO Message");
+        LOG.warn("A WARN Message");
+        LOG.error("An ERROR Message");
         return null;
     }
 
