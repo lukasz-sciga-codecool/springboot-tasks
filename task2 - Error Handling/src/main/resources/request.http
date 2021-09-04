@@ -1,0 +1,7 @@
+GET http://localhost:8080/products/10
+###
+
+POST http://localhost:8080/products
+###
+
+PUT http://localhost:8080/products
