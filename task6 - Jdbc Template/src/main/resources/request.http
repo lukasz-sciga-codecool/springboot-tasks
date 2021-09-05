@@ -1,0 +1,11 @@
+GET http://localhost:8080/products
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iPhone 11",
+  "price": 1000
+}
